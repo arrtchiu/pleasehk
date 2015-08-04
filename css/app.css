@@ -65,7 +65,7 @@ h3 {
     padding-top: 230px;
     padding-bottom: 100px;
     color: #000;
-    font-size: 35px;
+    font-size: 25px;
     font-weight: bold;
 }
 
@@ -75,16 +75,17 @@ h3 {
     background-size: 65px;
     padding-left: 80px;
     padding-right: 25px;
-    padding-top: 50px;
     min-height: 100px;
 }
 
+#services a, #services a:hover { color: #2eafb9; }
+
 #services .service-digital {
-    background-image: url(../images/service-digital.png);
+    background-image: url(../images/service-creative.png);
 }
 
 #services .service-creative {
-    background-image: url(../images/service-creative.png);
+    background-image: url(../images/service-digital.png);
 }
 
 #services .service-production {
@@ -93,6 +94,10 @@ h3 {
 
 #works {
   margin-bottom: 25px;
+}
+
+#clients { 
+    margin-bottom: 25px; 
 }
 
 .text-important {
@@ -128,13 +133,13 @@ h3 {
 
 .grey-block {
     background: #d3d3d3;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
 }
 
 .contact-block {
     background-color: #5c5a5b;
     color: #FFF;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .contact-block h2 {
@@ -143,17 +148,19 @@ h3 {
 }
 
 .contact-block a {
-    color: #fff;
+    color: #2db0ba;
 }
 
 a,
 a:hover {
-    color: #2db0ba;
+    color: #fff;
     text-decoration: none;
 }
 
 .contact-block h4 {
+    font-weight: bold;
     margin: 20px 0px;
+    color: #2db0ba;
 }
 
 .navbar-default .navbar-toggle {

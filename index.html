@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Please!</title>
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css' />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
@@ -17,7 +18,7 @@
     <script type="text/javascript" src="scripts/jquery.elastislide.js"></script>
     <script type="text/javascript">
       $(function() {
-        $('.elastislide-list').elastislide();
+        $('.elastislide-list').elastislide({ minItems: 1 });
         $('body').append('<script type="text/javascript" src="scripts/lightbox.min.js"></scri' + 'pt>');
       });
     </script>
@@ -51,28 +52,28 @@
     <div class="primary-banner">
         <div class="container">
             <div class="row">
-                <div class="col text-center">
-                    <p>Please Digital Limited is a Hong Kong based creative design consultant established in 2009. We create high-quality advertisements, fast.</p>
+                <div class="col-sm-10 col-sm-offset-1 text-center">
+                  <p class="lead">Please Digital Limited is a Hong Kong based Full Service Advertising Agency. We offer a wide range of dynamic and innovative marketing solutions for your business.</p>
                 </div>
             </div>
         </div>
     </div>
     <div class="grey-block">
-        <div id="services" class="container">
+         <div id="services" class="container">
             <h2>Our Services</h2>
             <div class="row">
-                <div class="col-sm-4 col-md-4 service service-digital">
-                    <h3>Creative</h3>
-                    <!-- <p>It's a demo copy only, please don't read it! It's a demo copy only.</p> -->
-                </div>
-                <div class="col-sm-4 col-md-4 service service-creative">
-                    <h3>Digital</h3>
-                    <!-- <p>It's a demo copy only, please don't read it! It's a demo copy only.</p> -->
-                </div>
-                <div class="col-sm-4 col-md-4 service service-production">
-                    <h3>Production</h3>
-                    <!-- <p>It's a demo copy only, please don't read it! It's a demo copy only.</p> -->
-                </div>
+              <div class="col-sm-4 col-md-4 service service-digital">
+                <h3>Creative</h3>
+                <p>Looking for creative solutions? Give us a call <a href="tel:+852%203521%201264">now.</a></p>
+              </div>
+              <div class="col-sm-4 col-md-4 service service-creative">
+                <h3>Digital</h3>
+                <p>Looking for animated ads? You've come to the right place!</p>
+              </div>
+              <div class="col-sm-4 col-md-4 service service-production">
+                <h3>Production</h3>
+                <p>Advertising outdoors? We do full service productions.</p>
+              </div>
             </div>
         </div>
     </div>
@@ -83,20 +84,17 @@
             <!-- BEGIN COPY HERE -->
             <!-- <li><a href="http://big" data-lightbox="must be unique"><img src="http://small" alt="description of image" /></a></li> -->
             <!-- END COPY HERE -->
-            <li><a href="/images/MMS_12 Sheet _invest_hires.jpg" data-lightbox="1"><img src="/images/MMS_12 Sheet _invest_lores.jpg" alt="Mass Mutual" /></a></li>
-            <li><a href="/images/Samsonite_12 Sheet_A_hires.jpg" data-lightbox="1"><img src="/images/missDior12sheet_hloes" alt="Miss Dior" /></a></li>
-            <li><a href="/images/Samsonite_12 Sheet_A_hires.jpg" data-lightbox="1"><img src="/images/Samsonite_12 Sheet_A_lores.jpg" alt="Samsonite" /></a></li>
+            <li><a href="/images/missDior12sheet_hires.jpg" data-lightbox="1"><img src="/images/missDior12sheet_lores.jpg" alt="Miss Dior" /></a></li>
+            <li><a href="/images/Kate_12sheet_hires.jpg" data-lightbox="1"><img src="/images/Kate_12sheet_lores.jpg" alt="Kate" /></a></li>
+            <li><a href="/images/SallyHassen_12sheet_A_hires.jpg" data-lightbox="1"><img src="/images/SallyHassen_12sheet_A_lores.jpg" alt="Sally Hassen" /></a></li>
+            <li><a href="/images/Samsonite_12 Sheet_A_hires.jpg" data-lightbox="1"><img src="/images/Samsonite_12-Sheet_A_lores.jpg" alt="Samsonite" /></a></li>
+            <li><a href="/images/Hartmann_12sheet_hires.jpg" data-lightbox="1"><img src="/images/Hartmann_12sheet_lores.jpg" alt="Hartmann" /></a></li>
+            <li><a href="/images/AmericanTourister_12-Sheet-hires.jpg" data-lightbox="1"><img src="/images/AmericanTourister_12-Sheet_lores.jpg" alt="American Tourister" /></a></li>
+            <li><a href="/images/MMS_12 Sheet _invest_hires.jpg" data-lightbox="1"><img src="/images/MMS_12-Sheet-_invest_lores.jpg" alt="Mass Mutual" /></a></li>
             <li><a href="/images/SanSheng_12sheet_hires.jpg" data-lightbox="1"><img src="/images/SanSheng_12sheet_lores.jpg" alt="SanSheng" /></a></li>
           </ul>
         </div>
     </div>
-
-    <!-- HERE'S WHAT YOU CAN USE TO MAKE ANOTHER IMAGE THINGY -->
-    <!--       <ul class="elastislide-list"> -->
-    <!--         <1!-- BEGIN COPY HERE --1> -->
-    <!--         <li><a href="http://big" data-lightbox="must be unique"><img src="http://small" alt="description of image" /></a></li> -->
-    <!--       </ul> -->
-
 
     <!-- <div class="grey-block"> -->
     <!--     <div id="staff" class="container"> -->
@@ -120,19 +118,38 @@
     <div id="clients" class="container text-center">
         <h2>Our Clients</h2>
         <ul class="elastislide-list">
-<li><img src="images/logos/Clients01.jpg" alt="description of image" /></li>
-<li><img src="images/logos/Clients02.jpg" alt="description of image" /></li>
-<li><img src="images/logos/Clients03.jpg" alt="description of image" /></li>
-</ul>
+          <li><img src="/images/client-logos/american-tourister-2.jpg" alt="American Tourister" /></li>
+          <li><img src="/images/client-logos/clinique.jpg" alt="Clinique" /></li>
+          <li><img src="/images/client-logos/dbs-2.jpg" alt="DBS Bank" /></li>
+          <li><img src="/images/client-logos/dior-2.jpg" alt="Dior" /></li>
+          <li><img src="/images/client-logos/fwd.jpg" alt="FWD" /></li>
+          <li><img src="/images/client-logos/gap.jpg" alt="GAP" /></li>
+          <li><img src="/images/client-logos/geox.jpg" alt="GEOX" /></li>
+          <li><img src="/images/client-logos/godiva.jpg" alt="GODIVA" /></li>
+          <li><img src="/images/client-logos/hartmann.jpg" alt="hartmann" /></li>
+          <li><img src="/images/client-logos/jcd.jpg" alt="JCDecaux" /></li>
+          <li><img src="/images/client-logos/juicy.jpg" alt="Juicy Couture" /></li>
+          <li><img src="/images/client-logos/kate.jpg" alt="Kate" /></li>
+          <li><img src="/images/client-logos/lancome.jpg" alt="Lancome" /></li>
+          <li><img src="/images/client-logos/lenovo.jpg" alt="Lenovo" /></li>
+          <li><img src="/images/client-logos/massmutual.jpg" alt="MassMutual" /></li>
+          <li><img src="/images/client-logos/maxims.jpg" alt="Maxims" /></li>
+          <li><img src="/images/client-logos/revlon.jpg" alt="Revlon" /></li>
+          <li><img src="/images/client-logos/sally.jpg" alt="Sally Hansen" /></li>
+          <li><img src="/images/client-logos/samsonite.jpg" alt="Samsonite" /></li>
+          <li><img src="/images/client-logos/shiseido.jpg" alt="Shiseido" /></li>
+          <li><img src="/images/client-logos/sony.jpg" alt="Sony" /></li>
+          <li><img src="/images/client-logos/tissot.jpg" alt="Tissot" /></li>
+        </ul>
     </div>
     <div id="contact" class="contact-block">
         <div class="container">
-            <h2>Contact</h2>
+            <h2>Contact us</h2>
             <div class="row">
                 <div class="col-sm-4">
-                    <h4>Please Digital Limited</h4>
-                    <p><a href="https://maps.google.com/maps?ll=22.291718,114.208193&z=16&t=m&hl=en-US&gl=US&mapclient=embed&q=Prosperity%20Millennia%20Plaza%20663%20King%27s%20Rd%20Tsat%20Tsz%20Mui%2C%20Hong%20Kong">Rm 1711, 17/F, Prosperity Millennia Plaza, 663 King's Road, North Point, Hong Kong</a></p>
-                    <p>Tel <a href="tel:+852%203521%201624">+852 3521 1264</a></p>
+                    <a href="#"><h4>Please Digital Limited</h4></a>
+                    <p>Rm 1711, 17/F, Prosperity Millennia Plaza, 663 King's Road, North Point, Hong Kong</p>
+                        <p>Tel <a href="tel:+852%203521%201264">+852 3521 1264</a></p>
                     <p>Email <a href="mailto:info@pleasehk.com">info@pleasehk.com</a></p>
                 </div>
                 <div class="col-sm-8">

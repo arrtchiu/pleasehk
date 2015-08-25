@@ -140,6 +140,7 @@ h3 {
     background-color: #5c5a5b;
     color: #FFF;
     font-size: 13px;
+    padding-bottom: 25px;
 }
 
 .contact-block h2 {
@@ -199,4 +200,6 @@ a:hover {
     #services .service {
         background-position: left top;
     }
+
+    .grey-block { padding-bottom: 0; }
 }
